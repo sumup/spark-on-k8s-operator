@@ -139,10 +139,10 @@ jobs:
         run: make detect-crds-drift
 
       - name: setup minikube
-        uses: manusa/actions-setup-minikube@v2.4.2
+        uses: manusa/actions-setup-minikube@v2.7.1
         with:
           minikube version: "v1.24.0"
-          kubernetes version: "v1.20.8"
+          kubernetes version: "v1.22.15"
           start args: --memory 6g --cpus=2 --addons ingress
           github token: ${{ inputs.github-token }}
 
@@ -166,10 +166,10 @@ jobs:
           go-version-file: "go.mod"
 
       - name: setup minikube
-        uses: manusa/actions-setup-minikube@v2.4.2
+        uses: manusa/actions-setup-minikube@v2.7.1
         with:
           minikube version: "v1.24.0"
-          kubernetes version: "v1.20.8"
+          kubernetes version: "v1.22.15"
           start args: --memory 6g --cpus=2 --addons ingress
           github token: ${{ inputs.github-token }}
 
