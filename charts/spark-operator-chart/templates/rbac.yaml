@@ -19,7 +19,6 @@ rules:
 - apiGroups:
   - ""
   resources:
-  - services
   - configmaps
   - secrets
   verbs:
@@ -27,6 +26,16 @@ rules:
   - get
   - delete
   - update
+- apiGroups:
+  - ""
+  resources:
+  - services
+  verbs:
+  - create
+  - get
+  - delete
+  - update
+  - watch
 - apiGroups:
   - extensions
   - networking.k8s.io
