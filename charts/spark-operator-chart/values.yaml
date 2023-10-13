@@ -136,6 +136,9 @@ tolerations: []
 # affinity -- Affinity for pod assignment
 affinity: {}
 
+# annotations -- Additional annotations to add to the deployment
+annotations: {}
+
 # podAnnotations -- Additional annotations to add to the pod
 podAnnotations: {}
 
